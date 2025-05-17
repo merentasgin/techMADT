@@ -18,6 +18,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyLibrary\techMADT.Core.csproj" />
+    <ProjectReference Include="..\techMADT.Data\techMADT.Data.csproj" />
+    <ProjectReference Include="..\techMADT.Service\techMADT.Service.csproj" />
   </ItemGroup>
 
 </Project>
